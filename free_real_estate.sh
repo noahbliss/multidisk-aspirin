@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 T_ROOT="/mnt/disk/user"
-INPUT_FILE="/mnt/disk/user/linklist"
+INPUT_FILE="linklist"
 count=0
 while IFS= read -r line; do
   ((count++))
@@ -15,4 +15,4 @@ while IFS= read -r line; do
     rm -rf "$T_ROOT/$R_TARGET"
     sed -i "${count}d" $INPUT_FILE
   fi
-done < "$INPUT_FILE"
+done < "$T_ROOT/$INPUT_FILE"
