@@ -16,6 +16,7 @@ if [ -d "$TARGET" ]; then
   R_TARGET=$(echo "$TARGET" | sed "s|$HOME/||")
   mkdir -p $(dirname "$R_TARGET")
   mv "$TARGET" "$R_TARGET"
+  sync
   ln -s "$T_ROOT/$R_TARGET" "$TARGET"
   echo "$TARGET" >> "$T_ROOT/$LINK_LIST"
 else
