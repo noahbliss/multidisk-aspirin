@@ -13,6 +13,6 @@ while IFS= read -r line; do
     echo "REMOVING FILES..."
     R_TARGET=$(echo "$line" | sed "s|$HOME/||")
     rm -rf "$T_ROOT/$R_TARGET"
-    sed -i "${count}d" $INPUT_FILE
+    sed -i "${count}d" "$T_ROOT/$INPUT_FILE"
   fi
 done < "$T_ROOT/$INPUT_FILE"
