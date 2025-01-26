@@ -27,3 +27,6 @@ Clean it up with the other script.
 /mnt/disk/user/free_real_estate.sh
 ```
 `somedirectory` is now gone. 
+
+## Why? 
+Because Baulder's Gate 3 is 150GB and that's insane.  
