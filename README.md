@@ -3,6 +3,8 @@ Makes working with paths linked to other disks less painful. I have multiple dis
 
 This is super simple, as such, relatively predictable and reliable. It's just symlinks and a tracking file.  
 
+**NOTE:** uses `mv` so if you're moving a big directory, might take a while.  
+
 ## Steps:
 
 1. Make a disk
